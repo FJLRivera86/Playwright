@@ -6,6 +6,6 @@ export class homePage {
 
     constructor(page: Page){
         this.page = page;
-        this.titleLabel = page.getByTitle('Today – Todoist');
+        this.titleLabel = page.getByRole('heading', { name: 'Today' }).first();        
     }
 }

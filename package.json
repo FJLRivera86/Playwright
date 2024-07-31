@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "e2e": "playwright test --headed"
+    "e2e": "playwright test"
   },
   "keywords": [],
   "author": "",

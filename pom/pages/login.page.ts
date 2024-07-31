@@ -14,8 +14,8 @@ export class loginPage {
         this.page = page;
         this.url = process.env.URLTODO ?? "";
         this.emailField = page.getByPlaceholder('Enter your email...');
-        this.passwordField = page.locator('Enter your password...');
-        this.startLoginBtn = page.getByTestId('log-in-button');
+        this.passwordField = page.getByPlaceholder('Enter your password...');
+        this.startLoginBtn = page.getByRole('link', { name: 'Log in' });
         this.loginBtn = page.getByTestId('start-email-login');
     }
 
