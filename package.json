@@ -1,0 +1,19 @@
+{
+  "name": "wizelineassessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
