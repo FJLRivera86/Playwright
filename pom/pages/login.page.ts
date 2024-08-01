@@ -7,7 +7,7 @@ export class loginPage {
     readonly url: string;
     readonly emailField: Locator;
     readonly passwordField: Locator;
-    readonly startLoginBtn: Locator;
+    readonly validEmailLabel: Locator;
     readonly loginBtn: Locator;
 
     constructor(page: Page){
@@ -15,11 +15,7 @@ export class loginPage {
         this.url = process.env.URLTODO ?? "";
         this.emailField = page.getByPlaceholder('Enter your email...');
         this.passwordField = page.getByPlaceholder('Enter your password...');
-        this.startLoginBtn = page.getByRole('link', { name: 'Log in' });
+        this.validEmailLabel = page.getByText('Please enter a valid email address.')
         this.loginBtn = page.getByTestId('start-email-login');
     }
-
-    async goto(){
-        await this.page.goto(this.url);
-    };
 }
